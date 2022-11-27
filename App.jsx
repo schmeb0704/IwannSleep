@@ -6,7 +6,11 @@ export default function App() {
     <View style={styles.appContainer}>
       <View style={{
         backgroundColor: "red",
-        flex: 1
+        alignSelf: 'flex-start',
+        width: 100,
+        height: 100,
+        alignItems: 'center',
+        justifyContent: 'center'
       }}>
         <Text>
         Square 1
@@ -15,7 +19,11 @@ export default function App() {
       </View>
       <View style={{
         backgroundColor: "green",
-        flex: 2
+        alignSelf: "center",
+        width: 100,
+        height: 100,
+        alignItems: 'center',
+        justifyContent: 'center'
       }}>
         <Text>
         Square 2
@@ -23,7 +31,13 @@ export default function App() {
         
       </View>
       <View style={{
-        backgroundColor: "blue"
+        backgroundColor: "blue",
+        alignSelf: "flex-end",
+        width: 100,
+        height: 100,
+        alignItems: 'center',
+        justifyContent: 'center'
+
       }}>
         <Text>
         Square 3
@@ -43,6 +57,6 @@ const styles = StyleSheet.create({
   borderColor: "grey",
   margin: 10,
   height: 300,
-  width: "80%",
+  width: 300,
  }
 });
